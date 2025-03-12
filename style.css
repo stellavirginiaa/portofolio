@@ -164,3 +164,36 @@ section h2 {
 .logo-projects {
     border-radius: 15px;
 }
+
+/* Mengatur container project agar tetap menyamping dan bisa di-scroll */
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap; /* Mencegah wrap dalam tampilan besar */
+  overflow-x: auto; /* Memungkinkan scroll horizontal jika perlu */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Untuk memastikan card tidak melebihi batas */
+.project-card {
+  flex: 0 0 auto; /* Menjaga ukuran tetap */
+  width: 300px; /* Sesuaikan dengan kebutuhan */
+  background-color: #033a6b;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Pastikan scrollbar tidak mengganggu tampilan */
+.projects-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: #011930;
+}
